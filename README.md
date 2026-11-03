@@ -75,7 +75,8 @@ python3 -m unittest discover -s research/test -v
 2026-11-03에 Windows·Python 3.14에서 33개 테스트가 통과했다. GitHub Actions는 `scripts/verify-hardware-free`(ShellCheck·bats·C++ 포함),
 MuJoCo 헤드리스 검증, RoboTwin 데이터 계약 테스트를 실행한다.
 
-실물 집기 실행기는 DAPIER의 [검토 브랜치](https://github.com/Alpenj/DAPIER/branches/all?query=sweepick)에 있고 `main`에 병합하지 않았다.
+> **`main` 코드의 실물 실행 상태 (2026-09-04 안전 고지 유지):** 이 저장소 `main`의 실행기에서 physical motion과 camera streaming은 local safety integration(connected-endpoint identity binding, 독립 device-side watchdog, 카메라 serial/cryptographic binding 확인)이 끝날 때까지 비활성화돼 있다. 실물 집기는 DAPIER의 [검토 브랜치](https://github.com/Alpenj/DAPIER/branches/all?query=sweepick)에 있는 별도 실행기(단일 owner·정지 조건·현장 승인)로 하며, 그 코드는 `main`에 병합하지 않았다.
+
 실물 보정·제어 전에는 [하드웨어 안전 절차](docs/HARDWARE_SAFETY_KO.md)를 먼저 확인한다. 문서의 예시 명령은 실물 실행 승인이 아니다.
 
 | 필요한 내용 | 안내 |
