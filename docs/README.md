@@ -6,7 +6,7 @@
 
 | 질문 | 문서·근거 |
 |---|---|
-| 어떤 로봇이고 무엇을 담당했는가? | [SWEEPICK 개요·구성·기여](../README.md) |
+| 어떤 로봇이고 무엇을 담당했는가? | [SWEEPICK 개요·구성·기여](../README.md) · [상세 기록](PROJECT_DETAIL_KO.md) |
 | 데이터를 어떻게 나누고 ACT를 평가했는가? | [CUSTOM ACT V1](CUSTOM_ACT_V1_KO.md) |
 | 실제 143개 위치 결과를 볼 수 있는가? | [위치별 CSV](evidence/custom_act_v1_20261027_positions.csv) · [조건·집계 JSON](evidence/custom_act_v1_20261027_summary.json) |
 | 모델·접촉·경로 검증은 어디에 있는가? | [이전 조작 연구와 고정 후보](RESEARCH_SUMMARY_KO.md) |
@@ -15,7 +15,7 @@
 
 ## 장비 구성과 날짜
 
-최근 조작 연구는 **SO-101 양팔·PGripper, 작업공간 OS30A RGB-D와 양손목 RGB**, 이동 베이스 전면 중앙의 **Astra RGB-D**를 구분한다. [프로젝트의 장비 설명](../README.md#장비-역할과-과거-설정)을 먼저 읽는다.
+최근 조작 연구는 **SO-101 양팔·PGripper, 작업공간 OS30A RGB-D와 양손목 RGB**, 이동 베이스 전면 중앙의 **Astra RGB-D**를 구분한다. [프로젝트의 장비 설명](PROJECT_DETAIL_KO.md#장비-역할과-과거-설정)을 먼저 읽는다.
 
 [`hardware_roles.json`](../config/hardware_roles.json)의 `effective_date=2026-09-03`과 H201 top-view는 **당시 구성**이다. 이전 Astra Pro 단일 카메라, JDcobot, 박스·신발 과제 문서도 현재 설정으로 바꿔 읽지 않는다. 문서를 최신화했다고 런타임·보정값이 갱신된 것은 아니다.
 
