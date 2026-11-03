@@ -5,8 +5,8 @@ on:
     branches:
       - "pro/**"
     paths:
-      - "2ARM_ROBOT/research/**"
-      - "2ARM_ROBOT/docs/**"
+      - "research/**"
+      - "docs/**"
       - "contracts/**"
       - "scripts/replay-localization-scenarios"
       - "scripts/verify-architecture-boundaries"
@@ -17,8 +17,8 @@ on:
       - ".github/workflows/hardware-ready.yml"
   pull_request:
     paths:
-      - "2ARM_ROBOT/research/**"
-      - "2ARM_ROBOT/docs/**"
+      - "research/**"
+      - "docs/**"
       - "contracts/**"
       - "scripts/replay-localization-scenarios"
       - "scripts/verify-architecture-boundaries"

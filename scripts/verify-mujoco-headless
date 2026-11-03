@@ -61,16 +61,16 @@ print(f"pillow={Image.__version__}")
 PY
 
 "$python_bin" -m unittest discover \
-  -s 2ARM_ROBOT/research/test -v
+  -s research/test -v
 
 "$python_bin" -m unittest discover \
-  -s 2ARM_ROBOT/sim/mobile_dual_so101/test -v
+  -s sim/mobile_dual_so101/test -v
 
-"$python_bin" 2ARM_ROBOT/sim/mobile_dual_so101/render_ci_artifacts.py \
+"$python_bin" sim/mobile_dual_so101/render_ci_artifacts.py \
   --model "$DAPIER_SO101_MJCF" \
   --output-dir "$artifact_dir"
 
-"$python_bin" 2ARM_ROBOT/sim/mobile_dual_so101/dapier_vision_demo.py \
+"$python_bin" sim/mobile_dual_so101/dapier_vision_demo.py \
   --artifact-dir "$artifact_dir/vision" \
   --artifact-only
 

@@ -9,7 +9,7 @@ import sys
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-RESEARCH_SRC = REPO_ROOT / "2ARM_ROBOT" / "research" / "src"
+RESEARCH_SRC = REPO_ROOT / "research" / "src"
 if str(RESEARCH_SRC) not in sys.path:
     sys.path.insert(0, str(RESEARCH_SRC))
 

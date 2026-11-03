@@ -18,8 +18,8 @@ script_dir="$(cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)" ||
   fail "cannot resolve script directory"
 repo_root="$(git -C "$script_dir" rev-parse --show-toplevel 2>/dev/null)" ||
   fail "script is not inside the DAPIER repository"
-manifest="$repo_root/so101/integrations/lerobot_v0_6_so101_mujoco/UPSTREAM_ASSETS.sha256"
-license_file="$repo_root/so101/integrations/lerobot_v0_6_so101_mujoco/LICENSE.apache-2.0.txt"
+manifest="$repo_root/third_party/lerobot_v0_6_so101_mujoco/UPSTREAM_ASSETS.sha256"
+license_file="$repo_root/third_party/lerobot_v0_6_so101_mujoco/LICENSE.apache-2.0.txt"
 [[ -f "$manifest" ]] || fail "asset hash manifest is missing"
 [[ -f "$license_file" ]] || fail "asset license file is missing"
 

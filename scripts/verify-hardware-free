@@ -42,7 +42,7 @@ printf '==> Architecture boundary checks\n'
 scripts/verify-architecture-boundaries
 
 printf '==> Python research contract tests\n'
-python3 -m unittest discover -s 2ARM_ROBOT/research/test -v
+python3 -m unittest discover -s research/test -v
 
 printf '==> Localization replay failure matrix\n'
 python3 scripts/replay-localization-scenarios \

@@ -19,7 +19,7 @@ watchdog, limit, command arbitration과 fail-closed 상태가 중요하다.
 
 ### 1. Python은 연구 책임만 소유한다
 
-신규 Python 연구 코드는 `2ARM_ROBOT/research/`에 둔다.
+신규 Python 연구 코드는 `research/`에 둔다.
 
 소유 책임:
 
@@ -37,7 +37,7 @@ watchdog, limit, command arbitration과 fail-closed 상태가 중요하다.
 - C++ watchdog, limit, interlock 또는 safe-stop 우회
 
 Python은 실행 명령이 아니라 **intent**를 제안한다. 기존
-`2ARM_ROBOT/src/shoe_sorting_data`의 하드웨어 인접 Python 도구는 과도기 코드로
+`src/shoe_sorting_data`의 하드웨어 인접 Python 도구는 과도기 코드로
 분류한다. 신규 연구 코드를 그 경로에 더하지 않고, 하드웨어 쓰기 책임은 단계별로
 C++로 이동한다.
 
@@ -81,7 +81,7 @@ clock으로 bounded `ttl_ns`를 시작한다.
 
 공개 템플릿에는 `TB3_USER=user`와 SSH-key 방식만 둔다. 현재 비밀번호는 저장소,
 PR, CI 또는 자동화 인자에 남기지 않는다. 실제 값은 Git에서 제외한
-`2ARM_ROBOT/config/local/turtlebot3.env`와 로컬 SSH agent/keychain에서 관리한다.
+`config/local/turtlebot3.env`와 로컬 SSH agent/keychain에서 관리한다.
 
 ## 데이터 흐름
 

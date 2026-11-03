@@ -6,7 +6,7 @@ DAPIER의 신규 로봇 코드는 언어가 아니라 실행 책임과 지연 �
 
 | 계층 | 기준 경로 | 소유 책임 |
 |---|---|---|
-| Python 연구 계층 | [`2ARM_ROBOT/research/`](2ARM_ROBOT/research/README.md) | object perception, policy, planning, simulation, dataset, offline evaluation, versioned intent 생성 |
+| Python 연구 계층 | [`research/`](research/README.md) | object perception, policy, planning, simulation, dataset, offline evaluation, versioned intent 생성 |
 | C++ 인식·지역화 런타임 | [`so101_ros2/dapier_localization_core/`](so101_ros2/dapier_localization_core/README.md) | localization estimate 계약, tracking quality, map/reset generation, 향후 Visual SLAM·TF adapter |
 | C++ 실시간 제어 계층 | [`so101_ros2/dapier_so101_core/`](so101_ros2/dapier_so101_core/) | receiver-local TTL, sequence, interlock, limit, watchdog, safe stop, hardware I/O |
 
@@ -92,7 +92,7 @@ and multi-map SLAM:
 
 ```bash
 scripts/verify-architecture-boundaries
-python3 -m unittest discover -s 2ARM_ROBOT/research/test -v
+python3 -m unittest discover -s research/test -v
 
 c++ -std=c++17 -Wall -Wextra -Wpedantic \
   -Iso101_ros2/dapier_so101_core/include \
@@ -112,6 +112,6 @@ scripts/verify-mujoco-headless --artifact-dir /tmp/dapier-mujoco-artifacts
 ```
 
 TurtleBot3 Raspberry Pi 접속 설정은
-[`2ARM_ROBOT/docs/TURTLEBOT3_REMOTE_ACCESS.md`](2ARM_ROBOT/docs/TURTLEBOT3_REMOTE_ACCESS.md)에
+[`docs/TURTLEBOT3_REMOTE_ACCESS.md`](docs/TURTLEBOT3_REMOTE_ACCESS.md)에
 분리한다. 공개 저장소에는 계정명과 secret-free 템플릿만 두고 비밀번호는 넣지
 않는다.

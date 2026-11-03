@@ -61,11 +61,11 @@ MuJoCo object pose, geom ID와 segmentation ID는 다음 용도에만 허용한�
 
 ### 3. Python 연구 계층이 인식과 계획을 소유한다
 
-`2ARM_ROBOT/research/src/dapier_research/vision_target.py`는 MuJoCo와 하드웨어에
+`research/src/dapier_research/vision_target.py`는 MuJoCo와 하드웨어에
 독립적인 RGB-D 투영 수식과 불확실성 계약을 소유한다. 입력은 detector mask,
 aligned metric depth, intrinsics와 4x4 보정 transform이다.
 
-`2ARM_ROBOT/sim/mobile_dual_so101/vision_guided_reach.py`는 MuJoCo 전용 adapter다.
+`sim/mobile_dual_so101/vision_guided_reach.py`는 MuJoCo 전용 adapter다.
 렌더링한 RGB-D, 카메라 pose와 base frame transform을 research 계층에 전달하고,
 센서로 추정한 target만 IK에 전달한다.
 

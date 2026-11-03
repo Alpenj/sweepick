@@ -85,7 +85,7 @@ CPU로 실행했다. 패키지를 설치하거나 기존 runtime·dataset·원�
 
 ## 이번 최소 수정
 
-변경한 구현 파일은 `2ARM_ROBOT/robotwin/convert_episode.py` 하나다.
+변경한 구현 파일은 `robotwin/convert_episode.py` 하나다.
 
 1. 첫 measured state를 velocity 검사에 포함한다. 첫 전이와 T=1 급변을 놓치지 않는다.
 2. frequency에 finite·numeric scalar·positive integral int64 계약을 적용한다. `29.97`을 `29`로 조용히 바꾸지 않는다.
@@ -118,9 +118,9 @@ Depth 단위 추정, 실제 calibration, arm 절대 limits를 임의로 추가�
 테스트 진입점:
 
 ```bash
-python -B 2ARM_ROBOT/robotwin/test_contract.py
-python -B 2ARM_ROBOT/robotwin/test_convert_episode.py
-python -B -m unittest discover -s 2ARM_ROBOT/robotwin -p test_merge_regressions.py -v
+python -B robotwin/test_contract.py
+python -B robotwin/test_convert_episode.py
+python -B -m unittest discover -s robotwin -p test_merge_regressions.py -v
 ```
 
 신규 `.github/workflows/robotwin-contract.yml`은 GitHub-hosted CPU runner에서 이 진입점을 실행한다.

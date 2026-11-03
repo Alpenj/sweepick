@@ -11,11 +11,11 @@ import sys
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-RESEARCH_SRC = REPO_ROOT / "2ARM_ROBOT" / "research" / "src"
+RESEARCH_SRC = REPO_ROOT / "research" / "src"
 CPP_LOCALIZATION_ROOT = REPO_ROOT / "so101_ros2" / "dapier_localization_core"
 CPP_SAFETY_ROOT = REPO_ROOT / "so101_ros2" / "dapier_safety_core"
 CPP_REALTIME_ROOT = REPO_ROOT / "so101_ros2" / "dapier_so101_core"
-REMOTE_EXAMPLE = REPO_ROOT / "2ARM_ROBOT" / "config" / "turtlebot3.env.example"
+REMOTE_EXAMPLE = REPO_ROOT / "config" / "turtlebot3.env.example"
 CONTROL_GENERATOR = REPO_ROOT / "scripts" / "generate-control-contract-header"
 LOCALIZATION_GENERATOR = (
     REPO_ROOT / "scripts" / "generate-localization-contract-header"

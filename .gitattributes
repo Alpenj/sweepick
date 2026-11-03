@@ -1,2 +1,2 @@
 *.step binary
-2ARM_ROBOT/**/*.sh text eol=lf
+*.sh text eol=lf
