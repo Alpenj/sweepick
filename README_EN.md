@@ -36,7 +36,7 @@ At project close we left hardware integration of cleaning, docking and charging,
 
 | Area | Role | Work |
 |---|---|---|
-| Simulation data and domain randomization | Led | Built SIM Expert in RoboTwin and Isaac Sim, produced the trajectory variants, and checked alignment across observations and actions. Set up the environment in Isaac Sim for a Sim-to-Real trial. |
+| Simulation data and domain randomization | Led | Built SIM Expert in RoboTwin to generate demonstrations at 143 positions. Used the 113 successful trajectories to produce appearance variants and checked alignment across observations and actions. Set up the real workspace in Isaac Sim to try Sim-to-Real transfer. |
 | Sim-to-Real hardware integration | Led | Built the native automatic teacher, DAgger handover, hardware recorder and ACT episode converter. Applied MuJoCo Jacobian-based damped least-squares inverse kinematics and seventh-order time scaling to the SO-101 arms. Implemented servo-load grasp checks and retry handling. |
 | ROS 2 base-to-arm handoff | Led | Designed the handoff topics, motion limits, heartbeat and base lock during arm operation. |
 | Custom ACT training and evaluation | Co-developed | Trained ACT through 200 epochs with a teammate. We evaluated the fixed epoch-30 checkpoint in a separate closed-loop test and classified the 11 failures. |
